@@ -1,0 +1,16 @@
+
+@media only screen and (max-width: 667px) {
+    
+    .trand-bg {
+      
+    height: auto;
+        overflow: scroll;
+ 
+}
+.loged-in-part .loged-in-part-in h3 {
+
+    font-size: 19px;
+   
+}
+}
+

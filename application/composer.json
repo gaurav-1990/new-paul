@@ -1,0 +1,9 @@
+{
+    "require": {
+        "facebook/graph-sdk": "^5.7",
+        "google/apiclient": "^2.2",
+        "v3labs/payubiz": "^0.3.1",
+        "picqer/php-barcode-generator": "^0.3.0",
+        "razorpay/razorpay": "2.*"
+    }
+}

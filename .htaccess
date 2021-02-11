@@ -1,0 +1,46 @@
+#<IfModule mod_rewrite.c>
+#    <IfModule mod_negotiation.c>
+#        Options -MultiViews -Indexes
+#   </IfModule>
+
+#    RewriteEngine On
+
+    # Handle Authorization Header
+#    RewriteCond %{HTTP:Authorization} .
+#    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_URI} (.+)/$
+#    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteRule ^ index.php [L]
+#    RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
+#AddHandler application/x-httpd-php70 .php .php5 .php4 .php3
+
+
+
+
+
+RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^15\.206\.48\.108$
+#RewriteRule ^(.*)$ http://oyegifts.in/$1 [L,R=301]
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+#RewriteCond %{HTTPS} off
+# 
+#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# 
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

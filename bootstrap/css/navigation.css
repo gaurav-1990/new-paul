@@ -1,0 +1,284 @@
+.navi-block {
+    /* position: inherit; */
+    padding: 0;
+    width: 100%;
+    /* float: left; */
+    /* margin-right: 2%; */
+    background-color: #ffffff;
+    border-top: #ccc 1px solid;
+}
+
+.navi-block .navbar {
+    position: inherit;
+}
+
+.navi-block .navbar .navbar-nav {
+    text-align: center;
+    float: none;
+}
+
+.navi-block .navbar .arow-back {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 20px;
+    display: none;
+}
+
+.navi-block .navbar .arow-back i {
+    font-size: 17px;
+    color: #a8a8a8;
+    font-weight: 100;
+}
+
+.navi-block .navbar-collapse {
+    /* position: absolute; */
+    width: 100%;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link {
+    color: #3e3c3c;
+    font-weight: 600;
+    padding: 11px 16px;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* letter-spacing: 0.6px; */
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: #0000 4px solid;
+    margin-top: 4px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover.color0 {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover.color1 {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover.color2 {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover.color3 {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover.color4 {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover.color5 {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link:hover.color6 {
+    border-bottom: #ca373d 4px solid;
+}
+
+.navi-block .navbar-nav .nav-item .nav-link i {
+    display: none;
+}
+
+.navi-block .navbar-nav .dropdown-menu .nav-link {
+    padding: 5px 1px;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 13px;
+}
+
+.navi-block .navbar-nav .dropdown-menu .nav-link:hover {
+    border-bottom: #50223100 4px solid;
+    background: no-repeat;
+    color: #000;
+    font-weight: 600;
+}
+
+
+/* adds some margin below the link sets  */
+
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom: 1rem;
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    background-color: #ffffff!important;
+}
+
+.navbar .dropdown-menu .col-md-3 {
+    padding: 0;
+    width: 100%;
+}
+
+.navbar .dropdown-menu ul {
+    display: block;
+    padding: 4px 0px;
+    border-bottom: #e8e7e7 1px solid;
+    width: 100%;
+}
+
+.mob-nav-head {
+    display: none;
+}
+
+.navbar .dropdown-menu ul .cat-head {
+    display: block;
+    padding: 2px 11px;
+    color: #676767;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+}
+
+.navbar .dropdown-menu ul .cat-head:hover {
+    color: #111d3f;
+}
+
+.navbar .dropdown-menu ul .cat-head i {
+    display: none;
+}
+
+
+/* breakpoint and up - mega dropdown styles */
+
+@media(max-width:1260px) {
+    .navi-block .navbar-nav .nav-item .nav-link {
+        padding: 29px 7px;
+        font-size: 13px;
+    }
+}
+
+@media(min-width:1024px) {
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    .navbar .nav-item {
+        /* padding:.5rem .5rem; */
+        /* margin:0 .25rem; */
+        display: inline-block;
+        float: none;
+    }
+    /* makes the dropdown full width  */
+    .navbar .dropdown {
+        position: relative;
+    }
+    .navbar .dropdown-menu {
+        width: 14%;
+        /* left: 153px; */
+        right: 0px;
+        /*  height of nav-item  */
+        top: 50px;
+        -webkit-transition: all 0.6s ease-out;
+        -o-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        transition: all 0.2s ease-out;
+        opacity: 0;
+        /* display: inherit !important; */
+    }
+    /* shows the dropdown menu on hover */
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown .dropdown-menu:hover {
+        opacity: 1;
+        -webkit-transition-delay: 0.2s;
+        -moz-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+    }
+    .navbar .dropdown-menu {
+        border: 0px solid rgba(0, 0, 0, .15);
+        background-color: #fff;
+        padding: 0;
+    }
+    .navbar .dropdown-menu ul li a {
+        padding: 3px 0px;
+        font-size: 13px;
+        color: #525252;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navi-block .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: #e6e6e6 0px solid;
+    }
+    .navbar {
+        z-index: 1;
+    }
+    .navi-block .navbar-nav .nav-item .nav-link {
+        display: block;
+        color: #282C3F;
+        font-weight: 600;
+        padding: 13px 19px;
+        font-family: 'Hind Siliguri', sans-serif;
+        /* letter-spacing: 0.6px; */
+        text-transform: capitalize;
+        font-size: 15px;
+        /* border-bottom: #e6e6e6 1px solid; */
+    }
+    .navi-block .navbar-nav .nav-item .nav-link i {
+        display: block;
+        float: right;
+        font-size: 17px;
+    }
+    .navbar-nav {
+        margin: 0;
+        background-color: #fff;
+        border-bottom: #d0d0d0 1px solid;
+    }
+    .navi-block {
+        position: absolute;
+        left: 0;
+        /* overflow: hidden; */
+        width: 0%;
+        height: 100vh;
+        background-color: #0000004a;
+        z-index: 100;
+    }
+    .navi-block .navbar-collapse {
+        position: fixed;
+        width: 294px;
+        height: 100vh ! important;
+        background: #ffffff;
+        max-height: 100%;
+        top: 0;
+        padding: 0;
+        z-index: 1000;
+        transition: opacity .3s linear,left .3s ease-out;
+        left: -301px;
+        display: block;
+    }
+
+  .navi-block .navbar-collapse.in{
+    transition: opacity .3s linear,left .3s ease-out;
+    /* width: 67.5%; */
+    left: 0;
+}
+    .navi-block .navbar-collapse.collapse{
+    /* transition: opacity .3s linear,left .3s ease-out; */
+    /* width: 67.5%; */
+    /* left: -200px; */
+}
+
+    .mob-nav-head {
+        padding: 17px 12px;
+        display: block;
+        background: #fff;
+        font-size: 10px;
+        margin: 0px -13px;
+        color: #bdbdbd;
+    }
+    .navi-block .navbar .arow-back {
+        display: block;
+        top: -33px;
+    }
+}

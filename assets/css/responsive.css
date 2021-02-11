@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1200px) {
+    .menu > ul > li a {
+    text-decoration: none;
+    padding: 10px 10px;
+   
+    font-size: 13px;
+   
+}
+}
+@media only screen and (max-width: 667px) {
+    
+    .trand-bg {
+      
+    height: auto;
+        overflow: scroll;
+ 
+}
+.loged-in-part .loged-in-part-in h3 {
+
+    font-size: 19px;
+   
+}
+}
+
